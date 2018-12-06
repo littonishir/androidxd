@@ -20,6 +20,9 @@ public class SnapHelperActivity extends AppCompatActivity {
         mRecyclerView1.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
         
         SnapHelperAdapter mSnapHelperAdapter1 = new SnapHelperAdapter(this);
+        /**
+         * PagerSnapHelper
+         */
         PagerSnapHelper mPagerSnapHelper = new PagerSnapHelper();
         mPagerSnapHelper.attachToRecyclerView(mRecyclerView1);
         mRecyclerView1.setAdapter(mSnapHelperAdapter1);
@@ -28,6 +31,9 @@ public class SnapHelperActivity extends AppCompatActivity {
         mRecyclerView2.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
         
         SnapHelperAdapter mSnapHelperAdapter2 = new SnapHelperAdapter(this);
+        /**
+         * LinearSnapHelper
+         */
         LinearSnapHelper mLinearSnapHelper = new LinearSnapHelper();
         mLinearSnapHelper.attachToRecyclerView(mRecyclerView2);
         mRecyclerView2.setAdapter(mSnapHelperAdapter2);
