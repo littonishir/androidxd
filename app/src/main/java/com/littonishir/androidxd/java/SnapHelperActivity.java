@@ -1,6 +1,10 @@
 package com.littonishir.androidxd.java;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.telephony.TelephonyManager;
 
 import com.littonishir.androidxd.R;
 
@@ -16,6 +20,9 @@ public class SnapHelperActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_snap_helper);
+
+
+
         RecyclerView mRecyclerView1 = findViewById(R.id.rv1);
         mRecyclerView1.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
         

@@ -3,6 +3,8 @@ package com.littonishir.androidxd
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.littonishir.androidxd.java.Main2Activity
+import com.littonishir.androidxd.java.Main3Activity
 import com.littonishir.androidxd.java.SnapHelperActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -12,7 +14,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         tv_name.setOnClickListener {
-            val intent = Intent(this, SnapHelperActivity::class.java)
+//            val intent = Intent(this, SnapHelperActivity::class.java)
+            val intent = Intent(this, PermissionActivity::class.java)
             startActivity(intent)
             println()
         }
